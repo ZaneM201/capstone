@@ -1,0 +1,20 @@
+# Created venv
+python -m venv venv
+
+# activate venv
+win:
+venv\Scripts\activate
+
+mac:
+source venv/bin/activate
+
+
+
+# install django and other packets
+python -m pip install django whitenoise pillow
+
+# create django project
+django-admin starproject condig .
+
+# create pages app
+python manage.py startapp pages
