@@ -10,9 +10,25 @@
     --surface-color-2: #3f3f3f;
     --secondary-color: #878ed5;
     --font-color: #cacbed;
-    --font-family: 'Arial', sans-serif;
     --primary-color: #282828;
+    --accent-red: #e10600;
 }
+
+body {
+    background-color: var(--surface-color);
+    color: var(--font-color);
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    min-height: 80vh;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
 .navbar{
     color: var(--font-color) !important;
     background-color: var(--primary-color) !important;
@@ -45,19 +61,6 @@
     height: 90px;
     width: auto;
     margin-right: 5px;
-}
-
-body {
-    background-color: var(--surface-color);
-}
-
-main {
-    min-height: 80vh;
-}
-
-a {
-    color: var(--font-color);
-    text-decoration: none;
 }
 
 .footer {

@@ -1,0 +1,23 @@
+// Countdown Timer
+        function updateCountdown() {
+            const raceDate = new Date('2026-03-06T21:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = raceDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.querySelectorAll('.countdown-number')[0].textContent = days;
+            document.querySelectorAll('.countdown-number')[1].textContent = hours;
+            document.querySelectorAll('.countdown-number')[2].textContent = minutes;
+            document.querySelectorAll('.countdown-number')[3].textContent = seconds;
+
+            if (distance < 0) {
+                document.querySelector('.countdown').innerHTML = '<p style="color: var(--accent-red); font-size: 1.5rem;">Race in Progress!</p>';
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);

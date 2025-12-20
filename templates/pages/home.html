@@ -8,10 +8,38 @@
 {% endblock %}
 
 {% block content %}
-<div class="home">
-    <h1>Hello World from Django!</h1>
-
-
-    <!-- <img src="{% static 'imgs/'}"> -->
-</div>
+<section class="home">
+    <div class="home-content">
+        <h1>🏁 Welcome to Apex Picks! 🏁</h1>
+        <p>Predict. Compete. Win. Your F1 Pick'em Championship Awaits!</p>
+    </div>
+</section>
+<section class="section section-home">
+    <div class="container">
+        <div class="race-card">
+            <div class="race-info">
+                <h3>🏎️ Next Race: Australian Grand Prix</h3>
+                <p>📍 Melbourne Grand Prix Circuit</p>
+            </div>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number">76</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">09</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">15</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">59</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
