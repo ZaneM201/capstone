@@ -22,6 +22,14 @@
     margin-bottom: 40px;
 }
 
+.race-info {
+    text-align: center;
+}
+
+.track-info {
+    margin: auto;
+}
+
 .countdown {
     display: flex;
     justify-content: center;
