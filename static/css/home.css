@@ -27,7 +27,12 @@
 }
 
 .track-info {
-    margin: auto;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    border: solid 1px var(--accent-red);
+    border-radius: 10px;
+
 }
 
 .countdown {
@@ -54,4 +59,9 @@
 .countdown-label {
     font-size: 1rem;
     color: var(--font-color);
+}
+
+.picks-info {
+    text-align: center;
+    margin-top: 30px;
 }
