@@ -3,6 +3,7 @@
 .home{
     color: var(--font-color);
     text-align: center;
+    margin: 30px 0;
 }
 
 .home-content {
@@ -27,6 +28,7 @@
 }
 
 .track-info {
+    margin: auto;
     align-items: center;
     border: solid 1px var(--accent-red);
     border-radius: 10px;
@@ -63,4 +65,44 @@
 .picks-info {
     text-align: center;
     margin-top: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .home-content p {
+        font-size: 1rem;
+    }
+    
+    .section-home {
+        padding: 30px 10px;
+    }
+    
+    .race-card {
+        padding: 25px;
+    }
+    
+    .race-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .countdown {
+        gap: 15px;
+    }
+    
+    .countdown-item {
+        padding: 15px;
+        min-width: 70px;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.9rem;
+    }
 }

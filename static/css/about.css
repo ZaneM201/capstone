@@ -1,6 +1,130 @@
 
-
 h1{
     color: var(--font-color);
     text-align: center;
+    margin: 30px 0;
+}
+
+.about-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--surface-color-2) 100%);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.rules-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--surface-color-2) 100%);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.rules-card h2 {
+    color: var(--accent-red);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.rules-card h2:first-of-type {
+    margin-top: 0;
+}
+
+.rules-list {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+}
+
+.points-table {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.points-table table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    overflow: hidden;
+    display: table;
+}
+
+.points-table thead {
+    background-color: var(--accent-red);
+}
+
+.points-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.points-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--surface-color-2);
+}
+
+.points-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.points-table tbody tr:hover {
+    background-color: var(--primary-color);
+}
+
+.dnf-penalty {
+    background-color: var(--surface-color);
+    border-left: 4px solid var(--accent-red);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.dnf-penalty strong {
+    color: var(--accent-red);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    
+    .about-card,
+    .rules-card {
+        padding: 30px 25px;
+        margin-bottom: 30px;
+    }
+    
+    .rules-card h2 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .rules-list {
+        margin-left: 15px;
+        line-height: 1.6;
+    }
+    
+    .points-table th,
+    .points-table td {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .dnf-penalty {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
 }

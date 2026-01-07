@@ -8,8 +8,93 @@
 {% endblock %}
 
 {% block content %}
-<div class="about container-fluid">
-    <h1>About us!</h1>
-    <p>Welcome to the about page of our F-1 Pick'em application. Here, we are passionate about Formula 1 racing and aim to provide an engaging platform for fans to participate in pick'em contests. Our mission is to enhance the F-1 experience by allowing users to test their knowledge and predictions against fellow enthusiasts. Join us on this thrilling journey through the world of Formula 1!</p>
-</div>
+<section class="about container-fluid">
+    <div class="container">
+        <h1>About us!</h1>
+        <div class="about-card">
+            <p>Welcome to the about page of our F-1 Pick'em application. Here, we are passionate about Formula 1 racing and aim to provide an engaging platform for fans to participate in pick'em contests. Our mission is to enhance the F-1 experience by allowing users to test their knowledge and predictions against fellow enthusiasts. Join us on this thrilling journey through the world of Formula 1!</p>
+        </div>
+        <div class="rules-card">
+            <h2>Rules</h2>
+            <ol class="rules-list">
+                <li>All users must have their picks submitted before the start of the first qualifying session (Q1).</li>
+                <li>Picks cannot be changed after Q1 starts.</li>
+                <li>Points are awarded based on the accuracy of the picks.</li>
+                <li>The user with the highest points at the end of the season wins the championship.</li>
+                <li>In case of a tie, the user with the most correct pole positions wins.</li>
+            </ol>
+            
+            <h2>Points System - Race Weekend</h2>
+            <div class="points-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st Place</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2nd Place</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3rd Place</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Pole Position</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Fastest Lap</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Driver of the Day</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dnf-penalty">
+                <strong>⚠️ DNF Penalty:</strong> If a driver you pick for 1st, 2nd, or 3rd place does not finish, you will lose the points you would have gained for that position. For example, if your 1st place pick DNFs, you lose the 25 points you would have gained if your pick was correct.
+            </div>
+
+            <h2>Sprint Race</h2>
+            <div class="points-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st Place</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>2nd Place</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>3rd Place</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="dnf-penalty">
+                <strong>⚠️ Sprint DNF:</strong> No picks for DNFs on the Sprint Race. However, if a driver you pick for 1st, 2nd, or 3rd place does not finish, you will lose the points you would have gained for that position.
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
