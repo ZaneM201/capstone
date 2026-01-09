@@ -18,3 +18,8 @@ django-admin starproject condig .
 
 # create pages app
 python manage.py startapp pages
+
+# EVERYTIME you modify a model
+# you need to run migrations
+python manage.py makemigrations
+python manage.py migrate

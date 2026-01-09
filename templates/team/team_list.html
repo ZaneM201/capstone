@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Teams - Apex Picks{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/team_list.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="teams">
+    <h1>Formula 1 Teams</h1>
+
+    <div class="team-list">
+        {% for team in team_list %}
+        <div class="team-card">
+            <h2>{{ team.name }}</h2>
+            {% if team.logo %}
+            <img src="{{ team.logo.url }}" alt="{{ team.name }} Logo" class="team-logo">
+            {% endif %}
+            <p><strong>Base:</strong> {{ team.base }}</p>
+            <p><strong>Team Principal:</strong> {{ team.principal }}</p>
+            <p><strong>Drivers:</strong> {{ team.driver_set.all|join:", " }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
