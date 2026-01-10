@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Contact Us - Apex Picks{% endblock title %}
+
+{% block css %} 
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="contact-form container mt-4">
+    <h1>Contact Us</h1>
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="id_name">Your Name:</label>
+                 <input type="text" name="name" maxlength="100" required="" id="id_name" data-np-autofill-field-type="fullName" data-np-uid="d3fb8ac0-d00a-473c-a054-d2de331340c5">
+            </div>
+            <div>
+                <label for="id_email">Your Email:</label>
+                <input type="email" name="email" maxlength="320" required="" id="id_email" data-np-autofill-field-type="email" data-np-uid="5035cafb-40af-4a4a-86d4-087e6aae535a">
+            </div>
+            <div>
+                <label for="id_subject">Subject:</label>
+                <input type="text" name="subject" maxlength="150" required="" id="id_subject" data-np-intersection-state="visible">
+            </div>
+            <div>
+                <label for="id_message">Your Message:</label>
+                <textarea name="message" cols="40" rows="10" required="" id="id_message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}
